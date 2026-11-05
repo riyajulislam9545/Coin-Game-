@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emperial X Mini App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Emperial X</h1>
+    <p>Coins: <span id="coinDisplay">0</span> | Rank: <span id="rank">Silver</span></p>
+  </header>
+
+  <div class="container">
+    <div class="card">
+      <h2>Coin Farming</h2>
+      <p>Level: <span id="farmingLevel">1</span> | Upgrade Cost: <span id="upgradeCost">60000</span></p>
+      <button class="btn" onclick="startFarming()">Start Farming</button>
+      <button class="btn" onclick="upgradeFarming()">Upgrade Farming</button>
+    </div>
+
+    <div class="card">
+      <h2>Daily Bonus</h2>
+      <button class="btn" onclick="claimDailyBonus()">Claim Bonus</button>
+    </div>
+
+    <div class="card">
+      <h2>Games</h2>
+      <button class="btn" onclick="playRPS()">Play Rock Paper Scissors</button>
+      <input type="number" id="rouletteBet" placeholder="Enter bet amount">
+      <button class="btn" onclick="playRoulette()">Play Roulette</button>
+    </div>
+
+    <div class="card">
+      <h2>Watch Video</h2>
+      <button class="btn" onclick="watchVideo()">Watch & Earn</button>
+    </div>
+
+    <div class="card">
+      <h2>Referral</h2>
+      <p>Share your referral link to earn 15000 coins per referral.</p>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <a href="#">🏠 Home</a>
+    <a href="#">📈 Leaderboard</a>
+    <a href="#">🎮 Games</a>
+    <a href="#">👤 Profile</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
